@@ -3,7 +3,7 @@
    font-size: 62.5%;
 
    /* Cores */
-   --hue: 170;
+   --hue: 670;
 
    --primary-color: hsl(var(--hue), 100%, 26%);
    --brand-light: hsl(var(--hue), 22%, 88%);
@@ -18,9 +18,44 @@
    --nav-heigth: 7.2rem;
 }
 
+/* Cores variáveis */
+#services .card circle {
+   fill: var(--brand-light);
+}
+
+#navigation .logo path[fill*="#00856F"],
+#backToTopButton circle {
+   fill: var(--primary-color);
+   transition: fill 1s;
+}
+
+button.open-menu path[stroke="#00856F"],
+#contact li path {
+   stroke: var(--primary-color);
+}
+
+body.menu-expanded #navigation .logo path,
+#navigation.scroll .logo path {
+   fill: #ffffff;
+   transition: 1s fill;
+}
+
+#navigation.scroll button.open-menu path[stroke="#00856F"] {
+   stroke: #ffffff;
+   transition: 1s stroke;
+}
+
+#mulher-svg path[fill*="#00856F"] {
+   fill: var(--primary-color);
+}
+
 /* Style Geral */
 * {
    box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
 }
 
 html,
@@ -135,6 +170,10 @@ nav .wrapper {
    display: flex;
    align-items: center;
    justify-content: space-between;
+}
+
+#navigation.scroll {
+   background-color: var(--primary-color);
 }
 
 #navigation button {
