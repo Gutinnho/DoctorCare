@@ -32,3 +32,36 @@ function openMenu() {
 function closeMenu() {
    document.body.classList.remove('menu-expanded');
 }
+
+ScrollReveal({
+   origin: 'top',
+   distance: '50px',
+   duration: 1000,
+}).reveal(`#navigation,
+#home,
+#home header,
+#home button,
+#services header,
+#services .card`);
+
+ScrollReveal({
+   origin: 'right',
+   distance: '50px',
+   duration: 700,
+}).reveal(`#about header,
+#about p,
+#about img`);
+
+ScrollReveal({
+   origin: 'left',
+   distance: '50px',
+   duration: 700,
+}).reveal(`#contact, 
+#contact button`);
+
+ScrollReveal({
+   origin: 'bottom',
+   distance: '50px',
+   duration: 1000,
+}).reveal(`footer`);
+
