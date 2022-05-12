@@ -161,7 +161,7 @@ HEAD:root {
       border: none;
    }
 
-   nav#navigation.scroll .menu a.active.button:hover,
+   nav#navigation.scroll .menu a.active.button,
    nav#navigation.scroll .menu a.button:hover {
       transition: 1s;
       background-color: #ffffff;
