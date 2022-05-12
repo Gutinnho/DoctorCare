@@ -1,4 +1,4 @@
-:root {
+HEAD:root {
    /* Definir a fonte assim para deixar o 1rem=10px */
    font-size: 62.5%;
 
@@ -134,6 +134,7 @@
       display: block;
 
       position: fixed;
+      position: relative;
       bottom: -1.9rem;
       left: -0.5rem;
 
@@ -215,5 +216,4 @@
    #home .button {
       margin: 0;
    }
-
 }
