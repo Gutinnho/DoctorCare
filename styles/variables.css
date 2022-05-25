@@ -1,0 +1,19 @@
+:root {
+   /* Definir a fonte assim para deixar o 1rem=10px */
+   font-size: 62.5%;
+
+   /* Cores */
+   --hue: 670;
+
+   --primary-color: hsl(var(--hue), 100%, 26%);
+   --brand-light: hsl(var(--hue), 22%, 88%);
+   --brand-hover: hsl(var(--hue), 100%, 14%);
+
+   --headline: #212529;
+   --paragraph: #495057;
+   --brand-beige: #fffaf1;
+   --bg-light: #f6f8f8;
+
+   /* Tamanho do nav */
+   --nav-height: 7.2rem;
+}

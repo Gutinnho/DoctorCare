@@ -1,0 +1,28 @@
+/* Navigation */
+nav {
+   display: flex;
+
+   height: var(--nav-height);
+
+   position: fixed;
+   top: 0;
+   width: 100vw;
+
+   z-index: 100;
+}
+
+nav .wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#navigation.scroll {
+   background-color: var(--primary-color);
+}
+
+#navigation button {
+   background: none;
+   border: none;
+   cursor: pointer;
+}

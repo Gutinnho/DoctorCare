@@ -1,0 +1,74 @@
+/* Home */
+#home {
+   padding-block: 0;
+   padding-top: calc(4.1rem + var(--nav-height));
+}
+
+#home h3 {
+   font-weight: 700;
+   font-size: 4.8rem;
+}
+
+#home h1 {
+   margin-bottom: 2.4rem;
+}
+
+#home p {
+   font-size: 1.8rem;
+   line-height: 150%;
+   font-weight: 400;
+   color: var(--paragraph);
+   margin-bottom: 3.2rem;
+}
+
+#home::before {
+   content: ' ';
+   width: 100%;
+   height: calc(78% + var(--nav-height));
+   background-color: var(--brand-light);
+   display: block;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+#home .button {
+   margin-inline: auto;
+}
+
+#home .stats {
+   padding-block: 4rem;
+
+   background-color: var(--brand-beige);
+   border: 1px solid var(--brand-light);
+   border-radius: 0.6rem;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 6rem;
+}
+
+#home .stat h3 {
+   font-size: 4.8rem;
+   color: var(--headline);
+   line-height: 130%;
+
+   margin-bottom: 0.4rem;
+}
+
+#home .stat p {
+   margin: 0;
+   color: var(--primary-color);
+   font-size: 1.6rem;
+
+}
+
+#mulher-svg {
+   position: relative;
+   margin-inline: auto;
+   margin-bottom: -12rem;
+   z-index: -1;
+}

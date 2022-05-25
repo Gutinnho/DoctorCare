@@ -1,0 +1,19 @@
+/* BackToTop Button */
+#backToTopButton {
+   position: fixed;
+   bottom: 1rem;
+   right: 3.5rem;
+   opacity: 0;
+   visibility: hidden;
+
+   transform: translateY(100%);
+   transition: 0.5s;
+}
+
+#backToTopButton.shw {
+   visibility: visible;
+   opacity: 1;
+
+   transform: translateY(0);
+   transition: 1s;
+}

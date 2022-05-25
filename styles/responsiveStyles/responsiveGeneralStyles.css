@@ -1,0 +1,25 @@
+@media (min-width: 1024px) {
+
+   /* Style Geral */
+   .wrapper {
+      width: min(112rem, 100%);
+      display: grid;
+   }
+
+   .col-a {
+      grid-area: A;
+   }
+
+   .col-b {
+      grid-area: B;
+   }
+
+   section {
+      padding-block: 16rem;
+   }
+
+   section header h2 {
+      font-size: 4rem;
+      line-height: 5.2rem;
+   }
+}

@@ -1,0 +1,96 @@
+/* Menu-expanded */
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+   opacity: 0%;
+   visibility: hidden;
+}
+
+body.menu-expanded> :not(nav) {
+   visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+   opacity: 1;
+   visibility: visible;
+}
+
+body.menu-expanded {
+   overflow: hidden;
+}
+
+.close-menu {
+   position: fixed;
+}
+
+.menu {
+   position: fixed;
+   transform: translatex(100%);
+}
+
+body.menu-expanded .menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: var(--primary-color);
+
+   width: 100vw;
+   height: 100vh;
+   padding-top: var(--nav-height);
+
+   transform: translateX(0);
+   transition: 550ms transform;
+}
+
+.menu ul:nth-child(1) {
+   display: flex;
+   flex-direction: column;
+   gap: 4.8rem;
+
+   margin: 6rem 0 0 0;
+
+   font-weight: 700;
+   font-size: 2.4rem;
+   line-height: 3.1rem;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: #fff;
+}
+
+.menu .button {
+   background-color: #ffffff;
+   border-radius: 4rem;
+   font-weight: 700;
+   font-size: 1.8rem;
+   line-height: 2.3rem;
+   text-transform: uppercase;
+   text-decoration: none;
+
+   color: var(--primary-color);
+   display: inline-block;
+   text-align: center;
+   padding: 1.6rem 3.2rem;
+
+   margin: 4.8rem 0 8rem;
+}
+
+.menu .button:hover {
+   background-color: var(--brand-hover);
+   color: var(--brand-light);
+}
+
+.social-links {
+   display: flex;
+   gap: 3.2rem;
+   align-items: center;
+   justify-content: center;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded button {
+   position: relative;
+   z-index: 100;
+}

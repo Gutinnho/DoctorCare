@@ -1,0 +1,15 @@
+/* About */
+#about {
+   text-align: left;
+   background-color: var(--brand-beige);
+}
+
+#about header h2 {
+   text-align: left;
+   margin-bottom: 2.4rem;
+}
+
+#about .content p {
+   margin-top: 2.4rem;
+   margin-bottom: 6rem;
+}

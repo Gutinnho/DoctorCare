@@ -1,0 +1,23 @@
+/* Footer */
+footer {
+   background-color: var(--primary-color);
+   padding-block: 6rem;
+
+   color: #ffffff;
+   text-align: left;
+}
+
+footer img {
+   margin-bottom: 2.4rem;
+}
+
+footer p {
+   color: var(--brand-beige);
+   line-height: 2;
+
+   margin-bottom: 3.2rem;
+}
+
+footer .social-links {
+   justify-content: flex-start;
+}

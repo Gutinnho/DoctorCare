@@ -1,0 +1,30 @@
+/* Cores variáveis */
+#services .card circle {
+   fill: var(--brand-light);
+}
+
+#navigation .logo path[fill*="#00856F"],
+#backToTopButton circle {
+   fill: var(--primary-color);
+   transition: fill 1s;
+}
+
+button.open-menu path[stroke="#00856F"],
+#contact li path {
+   stroke: var(--primary-color);
+}
+
+body.menu-expanded #navigation .logo path,
+#navigation.scroll .logo path {
+   fill: #ffffff;
+   transition: 1s fill;
+}
+
+#navigation.scroll button.open-menu path[stroke="#00856F"] {
+   stroke: #ffffff;
+   transition: 1s stroke;
+}
+
+#mulher-svg path[fill*="#00856F"] {
+   fill: var(--primary-color);
+}

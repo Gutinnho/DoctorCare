@@ -1,0 +1,12 @@
+@media (min-width: 1024px) {
+
+   /* Contact */
+   #contact .wrapper {
+      grid-template-columns: 1fr 57.5rem;
+      grid-template-areas: 'A B';
+   }
+
+   #contact h2 {
+      width: 40.4rem;
+   }
+}

@@ -1,0 +1,17 @@
+@media (min-width: 1024px) {
+
+   /* About */
+   #about .wrapper {
+      grid-template-columns: 48rem 1fr;
+      grid-template-areas: 'B A';
+      gap: 6.7rem;
+   }
+
+   #about .col-a {
+      align-self: center;
+   }
+
+   #about .content p {
+      margin-bottom: 0;
+   }
+}
